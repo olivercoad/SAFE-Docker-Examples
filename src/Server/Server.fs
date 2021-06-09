@@ -5,9 +5,11 @@ open Saturn
 
 open Shared
 
+let getMessage () = "Hello from SAFE!"
+
 let webApp =
     router {
-        get Route.hello (text "Hello from SAFE!")
+        get Route.hello (getMessage () |> json )
     }
 
 let app =
