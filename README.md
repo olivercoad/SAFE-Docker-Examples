@@ -13,7 +13,7 @@ docker run --rm -it -p 8085:8085 safe-docker-example
 To run the tests using docker-compose:
 
 ```bash
-docker-compse -f docker-compose.server.test.yml
+docker-compose -f docker-compose.server.test.yml up --build
 ```
 
 # SAFE Template
